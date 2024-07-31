@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.619);
+    width: 100%;
+    max-width: 600px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: black;
+}
+.to-do-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom:20px ;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-group label{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.input-group input,
+.input-group select{
+flex: 1;
+padding: 10px;
+border: 2px solid #ddd;
+border-radius: 10px;
+font-size: 16px;
+}
+#add-task-button{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    transition: transform 0.4s;
+}
+#add-task-button:hover{
+    transform: scale(1.1);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus{
+    border-color: #28a745;
+    box-shadow: 0 0 10px rgb(0, 0, 0.310);
+}
+
+label i,
+h1 i {
+color: #28a745;
+transition: transform 0.4s;
+}
+label i :hover,
+h1 i:hover{
+    transform: rotate(360deg);
+}
+
+#task-list{
+    list-style: none;
+    padding: 0;
+}
+#task-list li{
+    background: #eee;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+#task-list li:hover{
+    background: #ddd;
+}
+
+.task-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.task-action{
+    display: flex;
+    gap: 10px;
+}
+.delete-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+#task-list li i {
+    color: #28a745;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.797);
+}
